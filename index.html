@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>JavaScript Practice</h1>
+
+        <section>
+            <h2>DOM & Events</h2>
+
+            <p id="message">Click the button to change this message.</p>
+
+            <button id="changeBtn">Change Message</button>
+        </section>
+
+        <section>
+            <h2>Add a Product</h2>
+
+            <form id="productForm">
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Product name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="productPrice"
+                    placeholder="Price"
+                    min="1"
+                    required
+                >
+
+                <button type="submit">Add Product</button>
+            </form>
+
+            <p id="formMessage"></p>
+        </section>
+
+        <section>
+            <h2>Products</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a product..."
+            >
+
+            <p id="apiStatus"></p>
+
+            <div id="products"></div>
+        </section>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
